@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+      
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7e5b7;
+        }
+        header {
+            background-color:darkred;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .navbar{
+            margin-top: 10px;
+        }
+
+        section {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color:#fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        
+            .tweet2 {
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+            display: flex;
+           background-color:#d8d1e8;
+             margin-bottom: 15px;
+        }
+    
+        .tweet {
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+            display: flex;
+            background-color:lemonchiffon;
+            margin-bottom: 15px;
+        }
+
+        .tweet4 {
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+            display: flex;
+            background-color: lightcyan;
+            margin-bottom: 15px;
+        }
+
+        .tweet img {
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .tweet-content {
+            
+            flex: 1;
+        }
+         .tweet-content1 {
+            flex: 1;
+        }
+
+        button {
+            background-color: #00aced;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0077b5;
+        }
+        body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f4f4f4;
+    }
+
+    #container {
+      text-align: center;
+    }
+
+    .image-container {
+      margin: 10px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: #BAD7F9;
+    }
+    .image-container2 {
+      margin: 10px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: #b3d895;
+    }
+    .image-container3 {
+      margin: 10px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: #f9f9fa;
+    }
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+    .main_container{
+        display: flex;
+        flex-direction: column;
+    }
+    .main-head{
+        display: flex;
+        flex-direction: row;
+    }
+        #content {
+            display: flex;
+            justify-content: space-between;
+            width: 1200px;
+            margin: 20px auto;
+            background-color:lemonchiffon;
+        }
+
+        #left-column {
+            flex: 1;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        #right-column {
+            flex-basis: 300px;
+            background-image: url(./photos/ton.jpg);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .post {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        #post-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+        .super_container{
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(254, 253, 252);
+        }
+        #tweets-container {
+            background-color:cornsilk;
+            border-radius: 25px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 5px;
+            padding: 20px;
+            height: 55px;
+            border: 1px solid red;
+            width: 1000px;
+            margin-left: 80px;
+            margin-bottom: 20px;
+        }
+        #tweets-container1 {
+            background-color:cornsilk;
+            border-radius: 25px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 5px;
+            padding: 20px;
+            height: 55px;
+            border: 1px solid limegreen;
+            width: 1000px;
+            margin-left: 80px;
+            margin-bottom: 20px;
+        }
+           .tweet-content1 {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 5px;
+            margin-top: 0px;
+        }
+
+        .tweet-content {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+            margin-top: 0px;
+            
+        }
+          .tweet-content1 span {
+            color:crimson;
+        }
+        .tweet-content1 span2 {
+            color:lightslategrey;
+        }
+
+        .tweet-content span {
+            color: #3498db;
+        }
+        .tweet-content span2 {
+            color: darkcyan;
+        }
+        .life{
+            justify-content: center;
+            margin-left: 470px;
+        }
+        .minor_middle_div{
+            display: flex;
+            flex-direction: column;
+        }
+        .allcontainers{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        /*Review*/
+
+.review{
+    width: 99.9%;
+    height: 90vh;    
+    padding: 70px 0;
+    background-color: #fff;
+}
+
+.review h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.review h1 span{
+    margin-left: 15px;
+    color: #fac031;
+    font-family: mv boli;
+}
+
+.review h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fac031;
+    position: relative;
+    bottom: 15px;
+    display: block;
+}
+
+.review .review_box{
+    width: 95%;
+    margin: 70px auto;
+    display: flex;
+    margin-bottom: 4px;
+    margin-top: 0px;
+}
+
+.review .review_box .review_card{
+    background-color:cornsilk;
+    width: 300px;
+    height: 560px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    border-radius: 8px;
+    padding: 8px 20px;
+    margin: 0 8px;
+}
+
+.review .review_box .review_card .review_profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 0.3s;
+}
+
+.review .review_box .review_card:hover .review_profile{
+    transform: translateY(-60px);
+}
+
+.review .review_box .review_card .review_profile img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 5px solid #cccccc;
+}
+
+.review .review_box .review_card .review_text{
+    text-align: center;
+}
+
+.review .review_box .review_card .review_text .name{
+    color: #000;
+    transition: 0.3s;
+}
+
+.review .review_box .review_card:hover .review_text .name{
+    transform: translateY(-50px);
+}
+
+.review .review_box .review_card .review_text .review_icon{
+    color: #fac031;
+    transition: 0.3s;
+}
+
+.review .review_box .review_card:hover .review_text .review_icon{
+    transform: translateY(-30px);
+}
+
+.review .review_box .review_card .review_text .review_social i{
+    margin: 5px 1px;
+    font-size: 15px;
+    opacity: 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.review .review_box .review_card:hover .review_text .review_social i{
+    opacity: 1;
+    transform: translateY(-8px);
+}
+
+.review .review_box .review_card .review_text p{
+    text-align: center;
+    line-height: 22px;
+    transition: 0.3s;
+}
+
+.review .review_box .review_card:hover .review_text p{
+    margin-top: 5px;
+}
+
+
+ /*Team*/
+
+.team{
+    width: 99.9%;
+    height: 80vh;
+    background-color:darkred;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 60px;
+}
+
+.team h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 55px;
+    margin-bottom: 30px;
+    color: #fcb279;
+}
+
+.team h1 span{
+    color: #fac031;
+    margin-left: 15px;
+    font-family: mv boli;
+}
+
+.team h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.team .team_box{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 5px;
+    
+}
+
+.team .team_box .profile{
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    transition: 0.4s;
+    background-color:cornsilk;
+}
+
+.team .team_box .profile:hover{
+    border-radius: 20px;
+    height: 320px;
+}
+
+.team .team_box .profile img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    z-index: 2;
+    transition: 0.4s;
+}
+
+.team .team_box .profile:hover img{
+    border-radius: 20px;
+    margin-top: -230px;
+}
+
+.team .team_box .profile .info{
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    transition: 0.4s;
+}
+
+.team .team_box .profile:hover .info{
+    top: 60%;
+}
+
+.team .team_box .profile .info .name{
+    color: #fac031;
+    margin-bottom: 15px;
+}
+
+.team .team_box .profile .info .bio{
+    width: 70%;
+    text-align: center;
+    margin: 0 auto 10px auto;
+}
+
+.team .team_box .profile .info .team_icon i{
+    margin: 10px 5px 5px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.team .team_box .profile .info .team_icon i:hover{
+    color: #fac031;
+}
+.video-container{
+  margin-bottom: 5px;
+  margin-left: 50px;
+  height: 340px;
+  
+}
+.real-video{
+  margin-left: 10px;
+
+}
+.d-flex span{
+color: #00aced;
+margin-left: 5px;
+cursor: pointer;
+}
+.img-fluid{
+    height: 700px;
+    width: 7    00px;
+}
+.pro{
+    margin-right: 15px;
+}
+.navbar-brand{
+    font-size: 40px;
+    font-weight: bold;
+    color: darkred;
+    font-style:italic;
+    font-family: fantasy;
+}
+.center_div{
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    width: 690px;
+    margin-left: 370px;
+    margin-bottom: 10px;
+}
+.carousel-item{
+height: 540px;
+}
+.deal{
+    border-radius: 85px;
+    width: 170px;
+    height: 180px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+.deal1{
+    border-radius: 85px;
+    width: 170px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+.deal2{
+    border-radius: 85px;
+    width: 170px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+.deal3{
+    border-radius: 85px;
+    width: 120px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+.jose{
+    display: flex;
+    flex-direction: column;
+}
+.jose-word{
+    width: 240px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+.jose-word1{  
+    width: 260px;
+    margin-left: 10px;
+    margin-bottom: 25px;
+}
+.jose-word1 a{
+     text-decoration: none;
+     color: #afd9e8;
+}
+.hee{
+    border-radius: 120px;
+}
+
+
+
+
+
+
+
+
+
+
+    </style>
+    <title>KATO JOSEPH BWANIKA REG:2023-B291-11709</title>
+    
+</head>
+<body>
+    <div class="allcontainers">
+        <nav class="navbar navbar-expand-lg bg-body-secondary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Sheila's Lifestyle</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="pro">
+                    <button type="button" class="btn btn-primary position-relative">
+                        Profile
+                        <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                          <span class="visually-hidden">New alerts</span>
+                        </span>
+                      </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-primary position-relative">
+                        Notification
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                          99+
+                          <span class="visually-hidden">unread messages</span>
+                        </span>
+                      </button>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Email or phone" aria-label="Search">
+                  <input class="form-control me-2" type="search" placeholder="Password" aria-label="Search">
+                  <button class="btn btn-primary mb-3" type="submit">Login</button>
+                  <span class="form-text">
+                    Forgot Account?
+                   </span>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+        <div class="super_container">
+            <div id="content">
+                <div id="left-column">
+                    <!-- Post section -->
+                    <div>
+                        <textarea id="post-input" placeholder="What's on your mind?"></textarea>
+                        <button onclick="post()">Post</button>
+                    </div>
+        
+                    <!-- Display posts -->
+                    <div id="posts-container"></div>
+                </div>
+        
+                <div id="right-column">
+                    <!-- Sidebar content (e.g., user information, suggestions) -->
+                   
+                </div>
+            </div>
+           <div>
+
+
+            <div class="center_div">
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./photos/leen.jpg" class="d-block w-100" alt="1">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>First slide label</h5>
+                          <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./photos/jey1.jpg" class="d-block w-100" alt="2">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Second slide label</h5>
+                          <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./photos/jey.jpg" class="d-block w-100" alt="3">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Third slide label</h5>
+                          <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./photos/dee3.jpg" class="d-block w-100" alt="3">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Fourth slide label</h5>
+                          <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./photos/walk.jpg" class="d-block w-100" alt="3">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Fifth slide label</h5>
+                          <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./photos/lyf1.jpg" class="d-block w-100" alt="3">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Sixth slide label</h5>
+                          <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+    
+            </div>
+
+           </div>
+            <h1 class="life">Lifestyle Branding Tweets</h1>
+    
+            <div id="tweets-container">
+        
+               <p class="tweet-content">
+                "Embrace the everyday magic ✨ Dive into the joy of simple moments that make life extraordinary. <span>#EverydayMagic </span><span2>#LifestyleJourney"</span2>
+               </p>  
+                
+            </div>
+
+            <div class="main-head">
+                <header>
+                <center><h1>Lifestyle Brand</h1></center> 
+                <div class="jose">
+                    <img src="./photos/No5.jpg" class="deal">
+                    <label for="View">View Profile</label><br>
+                    <div class="jose-word">
+                        <p>
+                            Good online textile store with affordable prices. It can be quite crowded some<br>
+                            times but its definitely the best online selling textlie company i know in Uganda.<br>
+                            I would wish also to recommend it to everyone since its the best in the area with <br>
+                            genuine and unique textile products.
+                        </p>
+                    </div>
+                  
+                </div>
+                <div class="jose">
+                    <img src="./photos/can.jpg" class="deal1">
+                    <label for="View">View Profile</label><br>
+                    <div class="jose-word">
+                        <p>
+                            Good online textile store with affordable prices. It can be quite crowded some<br>
+                            times but its definitely the best online selling textlie company i know in Uganda.<br>
+                            I would wish also to recommend it to everyone since its the best in the area with <br>
+                            genuine and unique textile products.
+                        </p>
+                    </div>
+                </div>
+                <div class="jose">
+                    <img src="./photos/pos.jpg" class="deal2">
+                    <label for="View">View Profile</label><br>
+                    <div class="jose-word">
+                        <p>
+                            Good online textile store with affordable prices. It can be quite crowded some<br>
+                            times but its definitely the best online selling textlie company i know in Uganda.<br>
+                            I would wish also to recommend it to everyone since its the best in the area with <br>
+                            genuine and unique textile products.
+                        </p>
+                    </div>
+                </div>
+                <div class="jose">
+                    <img src="./photos/365884050_757180406411888_1936548525142586046_n.jpg" class="deal2">
+                    <label for="View">View Profile</label><br>
+                    <div class="jose-word">
+                        <p>
+                            Good online textile store with affordable prices. It can be quite crowded some<br>
+                            times but its definitely the best online selling textlie company i know in Uganda.<br>
+                            I would wish also to recommend it to everyone since its the best in the area with <br>
+                            genuine and unique textile products.
+                        </p>
+                    </div>
+                </div>
+                <div class="jose-word1">
+                    <img src="./photos/end.jpg" class="deal3">
+                    
+                        <h1 style="font-size: 30px; font-weight: bold; color:#fcb279; justify-content: center; margin-top: 10px;" >Contact Us</h1>
+
+                        For any official or Quick Reply send your inquiry to.
+                        <h3 style="font-size: 20px; font-weight: bold; color: #f7e5b7; justify-content: center; margin-top: 10px;">Emails</h3>
+                        
+                        <a href="./">kalla589@gmail.com</a> 
+                        <a href="./">joseph.bwanika@stud.umu.ac.ug</a> 
+                    
+                </div>
+             
+
+
+
+
+
+                </header>
+                <div class="main_container">
+                    <div id="container">
+                        <div class="image-container">
+                          <img src="./photos/dee1.jpg" alt="Image 1">
+                          <p>Image 1 description</p>
+                          <button onclick="post()">Post</button>
+                        </div>
+                        <div class="image-container2">
+                          <img src="./photos/dee4.jpg" alt="Image 2">
+                          <p>Image 2 description</p>  
+                          <button onclick="post()">Post</button>
+                        </div>
+                       
+                      </div>
+                
+                    <section>
+                   
+                        <div class="image-container">
+                            <img src="./photos/pos2.jpg" alt="Image 1">
+                            <p>Image 1 description</p>
+                            <button onclick="post()">Post</button>
+                          </div>
+                         <div class="tweet">
+                            <img src="./download.jpeg" alt="User 1">
+                            <div class="tweet-content">
+                                <h3>User 1</h3>
+                                <p>This is my first tweet! #excited #lifestyle</p>
+                            </div>
+                        </div>
+                
+                        <!-- More tweets can be added here -->
+                
+                        <button onclick="showNewTweetForm()">Compose Tweet</button>
+                        <div id="newTweetForm" style="display: none;">
+                            <textarea id="tweetInput" placeholder="What's happening?"></textarea>
+                            <button onclick="postTweet()">Tweet</button>
+                        </div>
+                    </section>
+                       <div id="container">
+                        <div class="image-container">
+                          <img src="./photos/dee5.jpg" alt="Image 1">
+                          <p>Image 1 description</p>
+                          <button onclick="post()">Post</button>
+                        </div>
+                        <div class="image-container2">
+                          <img src="./photos/dee2.jpg" alt="Image 2">
+                          <p>Image 2 description</p>
+                          <button onclick="post()">Post</button>
+                        </div>
+                        <!-- Add more image containers as needed -->
+                    </div>
+                </div>
+                <!--video-->
+                <div class="main_container">
+                    <div id="container1">
+                        <div class="image-container3">
+                            <video controls autoplay width="500" height="280" class="real-video">
+                                <source src="./videos/video6.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="image-container3">
+                            <video controls autoplay width="500" height="280" class="real-video">
+                                <source src="./videos/video2.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="image-container3">
+                            <img src="./beauty.jpeg" alt="Image 1">
+                            <p>Image 1 description</p>
+                            <button onclick="post()">Post</button>
+                          </div>
+                        <div class="image-container3">
+                            <video controls autoplay width="500" height="280" class="real-video">
+                                <source src="./videos/video5.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="image-container3">
+                            <video controls autoplay width="500" height="280" class="real-video">
+                                <source src="./videos/video8.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="image-container3">
+                            <img src="./download.jpeg" alt="User 1" class="hee">
+                            <p>Image 1 description</p>
+                            <button onclick="post()">Post</button>
+                          </div>
+
+                        <div class="image-container3">
+                            <video controls autoplay width="500" height="280" class="real-video">
+                                <source src="./videos/video4.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="image-container3">
+                            <video controls autoplay width="500" height="280" class="real-video">
+                                <source src="./videos/video9.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        
+                       
+                      </div>
+              
+                </div>
+                <!---end video-->
+                
+            </div>
+        <br>
+              <div id="tweets-container1">
+        
+               <p class="tweet-content1">
+                "Embrace the everyday magic ✨ Dive into the joy of simple moments that make life extraordinary. <span>#EverydayMagic </span><span2>#LifestyleJourney"</span2>
+               </p> 
+                  
+                
+            </div>
+    
+    
+        </div>
+        <div class="minor_middle_div">
+            <!--Review-->
+    
+    <div class="review" id="Review">
+        <div class="review_box">
+            <div class="review_card">
+    
+                <div class="review_profile">
+                    <img src="./images/beauty2.jpeg">
+                </div>
+    
+                <div class="review_text">
+                    <h2 class="name">Beauty and Care</h2>
+    
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+    
+                    <div class="review_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+    
+                    <p>
+                         My whole experience has been amazing. The person was so polite and caring. <br>
+                         They gave me a 10% discount on my textile order since it was my first time experience to order online.<br>
+                         I would definitely come back again to order more.                 
+                    </p>
+    
+                </div>
+    
+            </div>
+    
+            <div class="review_card">
+    
+                <div class="review_profile">
+                    <img src="./images/download (1).jpeg">
+                </div>
+    
+                <div class="review_text">
+                    <h2 class="name">Personal Exeperience</h2>
+    
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+    
+                    <div class="review_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+    
+                    <p>
+                       Beautiful textile products with much attention to detail. You can see that there is a lot of passion <br>
+                        behind this online textile company. Also great support, awesome staff!
+                    </p>
+    
+                </div>
+    
+            </div>
+    
+            <div class="review_card">
+    
+                <div class="review_profile">
+                    <img src="./images/download (3).jpeg">
+                </div>
+    
+                <div class="review_text">
+                    <h2 class="name">Travel Moments</h2>
+    
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+    
+                    <div class="review_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+    
+                    <p>
+                        The staff is really what has me coming back. This location has a great set of people, they are wonderful<br>
+                        and so sweet and always working hard!!! It is also very busy at this location and the employees are just so <br>
+                        dam nice and great! Thank you!!! I know how hard it can get sometimes but let me tell ya, this staff is the best!!<br> Amazing.
+                    </p>
+    
+                </div>
+    
+            </div>
+    
+            <div class="review_card">
+    
+                <div class="review_profile">
+                    <img src="./images/download (6).jpeg">
+                </div>
+    
+                <div class="review_text">
+                    <h2 class="name">Fashion Shots</h2>
+    
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+    
+                    <div class="review_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+    
+                    <p>
+                        Good online textile store with affordable prices. It can be quite crowded some<br>
+                        times but its definitely the best online selling textlie company i know in Uganda.<br>
+                        I would wish also to recommend it to everyone since its the best in the area with <br>
+                        genuine and unique textile products.
+                    </p>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </div>
+
+    
+    <!--Team-->
+    
+    <div class="team" id="Team">
+        <h1>Sheila's<span> Lifestyle.</span></h1>
+        <br><br>
+        <div class="team_box">
+            <div class="profile">
+                <img src="./photos/personal.jpg">
+    
+                <div class="info">
+                    <h2 class="name">Personal Exerience</h2>
+                    <p class="bio">Revolutionize the shopping experience in Uganda.</p>
+    
+                    <div class="team_icon">
+                        <a href="https://www.facebook.com/jbz.kalla.98"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/KatoJos30650741?t=no"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://instagram.com/jbz.kalla.98?igshid=ZDdkNTZiNTM="><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+            <div class="profile">
+                <img src="./images/images (2).jpeg">
+    
+                <div class="info">
+                    <h2 class="name">Fitness and Dining</h2>
+                    <p class="bio">Revolutionize the shopping experience in Uganda.</p>
+    
+                    <div class="team_icon">
+                        <a href="https://www.facebook.com/jbz.kalla.98"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/KatoJos30650741?t=no"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://instagram.com/jbz.kalla.98?igshid=ZDdkNTZiNTM="><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+            <div class="profile">
+                <img src="./photos/interior.jpg">
+    
+                <div class="info">
+                    <h2 class="name">Home DEcor & Interior</h2>
+                    <p class="bio">Revolutionize the shopping experience in Uganda.</p>
+    
+                    <div class="team_icon">
+                        <a href="https://www.facebook.com/jbz.kalla.98"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/KatoJos30650741?t=no"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://instagram.com/jbz.kalla.98?igshid=ZDdkNTZiNTM="><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+            <div class="profile">
+                <img src="./photos/deco.jpg">
+    
+                <div class="info">
+                    <h2 class="name">Beauty And Self Care</h2>
+                    <p class="bio">Revolutionize the shopping experience in Uganda.</p>
+    
+                    <div class="team_icon">
+                        <a href="https://www.facebook.com/jbz.kalla.98"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/KatoJos30650741?t=no"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://instagram.com/jbz.kalla.98?igshid=ZDdkNTZiNTM="><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+        <br><br>
+        <p style="font-size: 15px; font-family: fantasy; color: ghostwhite;margin-left: 590px;">Design by: 
+            <span style="font-size: 15px; font-family: fantasy; color:#afd9e8; margin-left: 10px;" > Kato Joseph Bwanika</span>
+            <span2 style="font-size: 15px; font-family: fantasy; color:cornsilk; margin-left: 5px;"> Reg:2023-B291-11709.</span2>
+        </p>
+    
+    </div>
+    
+        </div>
+    </div>
+    
+    
+    
+    <script>
+        function showNewTweetForm() {
+            document.getElementById('newTweetForm').style.display = 'block';
+        }
+
+        function postTweet() {
+            const tweetInput = document.getElementById('tweetInput').value;
+            if (tweetInput.trim() !== '') {
+                const newTweet = document.createElement('div');
+                newTweet.className = 'tweet';
+                newTweet.innerHTML = `
+                    <img src="new_profile.jpg" alt="New User">
+                    <div class="tweet-content">
+                        <h3>New User</h3>
+                        <p>${tweetInput}</p>
+                    </div>
+                `;
+                document.querySelector('section').insertBefore(newTweet, document.querySelector('section').firstChild);
+                document.getElementById('tweetInput').value = '';
+                document.getElementById('newTweetForm').style.display = 'none';
+            }
+        }
+
+
+        function post() {
+            const postInput = document.getElementById('post-input').value;
+            if (postInput.trim() !== '') {
+                const postContainer = document.getElementById('posts-container');
+                const newPost = document.createElement('div');
+                newPost.className = 'post';
+                newPost.innerHTML = `<p>${postInput}</p>`;
+                postContainer.insertBefore(newPost, postContainer.firstChild);
+                document.getElementById('post-input').value = '';
+            }
+        }
+    </script>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
